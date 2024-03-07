@@ -7,15 +7,33 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
+    @State private var isPlaying = false
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+      GroupButton()
+        ImageTwo()
+//       ImageOne()
+//        VStack {
+//            PlayButton(
+//                isPlaying: $isPlaying
+//            )
+//            .onTapGesture {
+//                isPlaying.toggle()
+//                if !isPlaying {
+//                    isPlaying = true
+//                }else{
+//                    isPlaying = false
+//                }
+//                
+//            }
+//            Button("Submit"){
+//                
+//            }
+//            .disabled(true)
+//            
+//        }
     }
 }
 
