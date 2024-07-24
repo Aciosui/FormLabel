@@ -27,8 +27,8 @@ struct AccessibilityElement: View {
                         isActive.toggle()
                     }
                     .accessibilityElement(children: .combine)
-                    .accessibilityAddTraits(.isButton)
-                    .accessibilityValue(isActive ? "is on" : "is off")
+                    .accessibilityAddTraits(.isButton) // Adding button role
+                    .accessibilityValue(isActive ? "is on" : "is off") // Button states
                     .accessibilityAction {
                         isActive.toggle()
                     }
