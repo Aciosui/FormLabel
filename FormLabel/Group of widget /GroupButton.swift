@@ -22,8 +22,8 @@ struct GroupButton: View {
         }
         .accessibilityElement()
         .accessibilityLabel("Value")
-        .accessibilityValue(String(value)) /* procide dynamic label */
-        .accessibilityAdjustableAction { direction in   /* modifier, you provide a way for VoiceOver users to change the page by using swipe up or down gestures */
+        .accessibilityValue(String(value))        /* provide dynamic label */
+        .accessibilityAdjustableAction { direction in       /* modifier, you provide a way for VoiceOver users to change the page by using swipe up or down gestures */
             switch direction {
             case .increment:
                 value += 1
